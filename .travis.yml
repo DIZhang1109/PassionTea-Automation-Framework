@@ -4,7 +4,7 @@ jdk:
   - oraclejdk8
 
 script:
-  - mvn clean install -B
+  - mvn clean install -B test jacoco:report coveralls:report
 
 before_script:
   - "export DISPLAY=:99.0"
